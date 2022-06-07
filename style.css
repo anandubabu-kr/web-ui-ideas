@@ -1,0 +1,107 @@
+:root {
+    /* --primeryBackground: #F2F2F2;
+    --secondPrimaery: #D9D9D9;
+    --fontColor: #0D0D0D;
+    --accentColor: #0A4DA6;
+    --accent2: #056CF2;
+    --accentHover: #614BF2; */
+    --blue: #2c40fa;
+    --white: #ffffff;
+    --orange: #ff9100;
+    --footer-blue: #121234;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 2rem black;
+    position: sticky;
+    background-color: var(--white);
+    top: 0px;
+}
+
+header,main,footer{
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav div{
+    margin: 0px 2rem;
+}
+header {
+    width: 100%;
+    text-align: center;
+    min-height: 100px;
+}
+
+main {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    /* padding:0px 1rem 1rem 0px; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    outline: 2px solid var(--orange);
+}
+
+
+
+.card iframe {
+    border-radius: 10px;
+}
+
+.card .button-wrapper {
+    display: flex;
+    
+}
+
+.button-wrapper button {
+    padding: .5rem 1rem;
+    border: 0px;
+    color: var(--white);
+    background-color: var(--blue);
+
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    outline: 1px dashed rgb(85, 85, 85);
+    margin: 2rem;
+    cursor: pointer;
+}
+
+input[type=file] {
+    display: none;
+}

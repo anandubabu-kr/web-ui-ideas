@@ -1,0 +1,140 @@
+body,
+nav,
+.contents {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+  color: #ffffff;
+  background: #1d1e20;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+nav,
+.contents {
+  display: flex;
+}
+
+header {
+  font-size: 2rem;
+  /* background: #2E9C7F; */
+  margin: 0px;
+  /* background-size: 4px ; */
+  /* -webkit-backdrop-filter: blur(3rem); */
+  border-bottom: 3px solid #2e9c7f;
+}
+header p {
+  padding: 1rem;
+  margin: 0px;
+}
+nav {
+  flex-direction: column;
+  min-width: 250px;
+  align-items: center;
+  justify-content: center;
+  background: #1d1e20;
+  z-index: 2;
+}
+button {
+  padding: 1rem;
+  border: 0px;
+  width: 100%;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+div {
+  min-height: 100vh;
+  background: #1d1e20;
+  background-color: #2e9c7f;
+  background: url('https://unsplash.it/700/400') no-repeat;
+  background-size: cover;
+}
+div section {
+  transition: 0.5s;
+  margin: 0px;
+  overflow: hidden;
+  height: 0px;
+  transform: translateX(-250%);
+  padding: 0px;
+  z-index: 1;
+}
+.active {
+  background-color: #2e9c7f76;
+  backdrop-filter: blur(5px);
+  transform: translateX(0%);
+  display: block;
+  position: relative;
+}
+section.active {
+  padding: 1rem;
+  height: 100vh;
+}
+
+/*
+
+button.active::before{
+  content: '';
+  display: block;
+  position:absolute;
+  right: 0px;
+  top: -40px;
+  width: 40px;
+  border-bottom-right-radius:50% ;
+  box-shadow: 10px 10px 0px #2E9C7F;
+  background-color: #1D1E20;
+  aspect-ratio: 1/1;
+  z-index: 1;
+}
+
+button.active::after{
+  content: '';
+  display: block;
+  position:absolute;
+  right: 0px;
+  bottom:  -40px;
+  border-top-right-radius: 50%;
+  background-color: #0f201c;
+  box-shadow: 10px -10px 0px #2E9C7F;
+  width: 40px;
+  aspect-ratio: 1/1;
+  z-index: 1;
+}
+*/
+
+div section p span {
+  /* background-color: red; */
+  position: absolute;
+  bottom: 10px;
+  animation: rockect 5s ease-in infinite;
+}
+
+@keyframes rockect {
+  from {
+    left: 0%;
+    bottom: 10px;
+  }
+  to {
+    bottom: 120%;
+    left: 120%;
+    transform: scale(17);
+  }
+}
+
+.tooltip {
+  color: antiquewhite;
+  /* background-color: #1D1E20; */
+  position: relative;
+  cursor: pointer;
+}
+.tooltip:hover::before {
+  content: attr(data-tooltext);
+  width: max-content;
+  /* height: fit-content; */
+  bottom: 1.5rem;
+  position: absolute;
+  /* width: 200px; */
+  padding: 0.5rem;
+  background-color: #1d1e20;
+}

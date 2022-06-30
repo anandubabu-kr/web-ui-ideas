@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #001524;
+            color: #ffecd1;
+        }
+
+        .card {
+            margin: auto;
+            align-items: center;
+            border-radius: 10px;
+            max-width: 300px;
+            position: relative;
+            background-color: #15616d;
+            padding: 1rem;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .content {
+            width: 100%;
+            transform: translateY(170%);
+            transition: 1s;
+        }
+
+        .img {
+            width: 100%;
+            transform: translateY(30%);
+            transition: 1s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img>* {
+            margin: 1rem auto;
+        }
+
+        .img img {
+            border-radius: 50%;
+            max-width: 150px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        .card:hover>* {
+            transform: translateY(0%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img src="https://unsplash.it/200/200" alt="loders">
+                <h1>Blassikkaos !</h1>
+            </div>
+            <div class="content">
+                <p>Giggoro kikkavaso libinum. Tuker sicko mechvo sahil jo ekna em duo sa leproski</p>
+                <button>Exlplra more &rightarrow;</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

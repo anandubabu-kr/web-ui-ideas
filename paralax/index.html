@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parellax effect</title>
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .continer {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 10px;
+        }
+
+        img {
+            position: absolute;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            transform: translateZ(-20px) scale(3);
+        }
+
+        h1 {
+            font-size: 7rem;
+            color: aliceblue;
+            position: absolute;
+            text-shadow: 0 0 10px black;
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transform-style: preserve-3d;
+            z-index: -1;
+        }
+        section{
+            font-size: 1.3rem;
+            padding: 1rem;
+            background-color: antiquewhite;
+        }
+    </style>
+    <link rel="stylesheet" href="portfolio/test.css">
+</head>
+
+<body>
+    <div class="continer">
+        <header>
+            <img src="./images/lake.jpg" alt="">
+            <h1>Welcome !</h1>
+        </header>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto amet in? Illo, explicabo, dicta
+            labore aperiam magni praesentium in corrupti error animi consequuntur ipsum beatae enim quos ratione nisi
+            nihil id? Error magnam similique libero deleniti tenetur aperiam adipisci temporibus voluptas, rerum sunt
+            sapiente delectus iste totam quidem a accusantium. Numquam saepe omnis nobis, optio corporis vitae magnam
+            debitis amet doloribus veritatis suscipit laboriosam et neque.
+            
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto amet in? Illo, explicabo, dicta
+            labore aperiam magni praesentium in corrupti error animi consequuntur ipsum beatae enim quos ratione nisi
+            nihil id? Error magnam similique libero deleniti tenetur aperiam adipisci temporibus voluptas, rerum sunt
+            sapiente delectus iste totam quidem a accusantium. Numquam saepe omnis nobis, optio corporis vitae magnam
+            debitis amet doloribus veritatis suscipit laboriosam et neque.
+
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto amet in? Illo, explicabo, dicta
+            labore aperiam magni praesentium in corrupti error animi consequuntur ipsum beatae enim quos ratione nisi
+            nihil id? Error magnam similique libero deleniti tenetur aperiam adipisci temporibus voluptas, rerum sunt
+            sapiente delectus iste totam quidem a accusantium. Numquam saepe omnis nobis, optio corporis vitae magnam
+            debitis amet doloribus veritatis suscipit laboriosam et neque.
+
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi architecto amet in? Illo, explicabo, dicta
+            labore aperiam magni praesentium in corrupti error animi consequuntur ipsum beatae enim quos ratione nisi
+            nihil id? Error magnam similique libero deleniti tenetur aperiam adipisci temporibus voluptas, rerum sunt
+            sapiente delectus iste totam quidem a accusantium. Numquam saepe omnis nobis, optio corporis vitae magnam
+            debitis amet doloribus veritatis suscipit laboriosam et neque.
+
+        </section>
+    </div>
+</body>
+
+</html>

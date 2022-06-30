@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bars</title>
+    <style>
+        .container {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            width: 50px;
+            background-color: #7FC15E;
+            margin: .2rem;
+            animation: animate 1s  var(--time) infinite alternate ;
+            /* animation-name: animate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: var(--time); */
+        }
+
+        @keyframes animate {
+            from {
+                height: 0px;
+            }
+
+            to {
+                padding-top: var(--padding);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span class="bar" style="--time:.1s;--padding:6rem"></span>
+        <span class="bar" style="--time:.2s;--padding:1rem"></span>
+        <span class="bar" style="--time:.6s;--padding:8rem"></span>
+        <span class="bar" style="--time:.72s;--padding:10rem"></span>
+        <span class="bar" style="--time:.8s;--padding:14rem"></span>
+        <span class="bar" style="--time:.9s;--padding:12rem"></span>
+        <span class="bar" style="--time:1s;--padding:3rem"></span>
+        <span class="bar" style="--time:1.4s;--padding:7rem"></span>
+        <span class="bar" style="--time:1.6s;--padding:6rem"></span>
+        <span class="bar" style="--time:1.9s;--padding:4rem"></span>
+        <span class="bar" style="--time:2s;--padding:16rem"></span>
+        <span class="bar" style="--time:2.4s;--padding:12rem"></span>
+        <span class="bar" style="--time:2.5s;--padding:19rem"></span>
+        <span class="bar" style="--time:2.6s;--padding:13rem"></span>
+        <span class="bar" style="--time:2.9s;--padding:8rem"></span>
+    </div>
+</body>
+
+</html>
